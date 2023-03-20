@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #eee;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 500;
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop {
+        display: initial;
+    }
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    position: fixed;
+    top: 15;
+    z-index: 2;
+    width: 100%;
+}
+
+.away {
+    max-width: 70%;
+    margin-left: 80px;
+}
+
+.away:hover {
+    transition: 0.5s ease-out;
+    max-width: 75%;
+}
+
+a.logo {
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}
+
+header a {
+    color: inherit;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+header nav a:hover {
+    transition: width 0.5s, background-color 1s;
+    border-radius: 3px;
+    background-color: rgba(219, 219, 219, 0.14);
+    padding: 5px 14px;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 2px 18px;
+}
+
+header nav.center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+section .content {
+    width: 100%;
+    height: 100vh;
+    padding-top: 18vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+section h1 {
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+section p {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+section a {
+    color: inherit;
+}
+
+section .buttons a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.427);
+    color: #171a20;
+    padding: 12px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section .buttons a:hover {
+    transition: 0.7s;
+    background-color: rgba(255, 255, 255, 0.741);
+    padding: 13px 52px;
+}
+
+section .buttons {
+    margin: 0 40px;
+}
+
+@media (min-width: 768px) {
+    section .buttons {
+        grid-template-columns: 1fr 1fr;
+        max-width: 640px;
+        margin: 0 auto;
+
+    }
+}
+
+.page2 {
+    background-color: #171a20;
+}
+
+/*---- Footer ----*/
+
+footer {
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #171a20
+}
+
+.footer_inner {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.footer_col {
+    flex-basis: 23%;
+    padding: 10px;
+}
+
+
+.footer_image {
+    border: 0;
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.footer_top {
+    background-color: #0061c8;
+    min-height: 140px;
+    padding: 2rem 1rem;
+}
+
+.footer_away {
+    max-width: 25%;
+}
+
+
+.footer_col h3 {
+    display: block;
+    font-size: 1.17rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.footer_col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+.footer_col ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.share_item {
+    border: 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 0.5rem 0.5rem 0;
+    text-align: center;
+    width: 3rem;
+    background: #99bdec;
+}
+
+.box_follow .share_item:hover {
+    height: 3.3rem;
+    width: 3.3rem;
+    transition: all .2s ease-out;
+
+}
+
+.box_follow img {
+    max-width: 75%;
+}
+
+.underline {
+    width: 30%;
+    height: 4px;
+    background: #c1c0c0;
+    border-radius: 3px;
+    top: 7px;
+    left: 0;
+    position: relative;
+
+}
+
+.underline span {
+    width: 35px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+
+
+}
