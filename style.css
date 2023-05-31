@@ -36,7 +36,7 @@ header {
 }
 
 .away:hover {
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-out;
     max-width: 75%;
 }
 
@@ -107,7 +107,7 @@ section .buttons a {
     display: block;
     background-color: rgba(255, 255, 255, 0.427);
     color: #171a20;
-    padding: 12px 50px;
+    padding: 14px 60px;
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -145,7 +145,7 @@ footer {
     width: 100%;
     bottom: 0;
     padding: 100px 0 30px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
     background-color: #171a20
 }
